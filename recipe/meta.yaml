@@ -1,5 +1,5 @@
 {% set name = "doubt" %}
-{% set version = "4.4.1" %}
+{% set version = "4.5.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/doubt-{{ version }}.tar.gz
-  sha256: 6773cbc3ee420e0868f79bd29251327f758d3ba398603648e9c4ce22922f11a3
+  sha256: 864eebe825bb2000c4a8297102c2fec07541963784efb4b3d337be7a616a462b
 
 build:
   noarch: python
@@ -25,11 +25,12 @@ requirements:
     - tqdm >=4.62.0,<5.0.0
     - numpy >=1.23.0,<2.0.0
     - pandas >=1.4.0,<2.0.0
-    - joblib >=1.1.0,<2.0.0
-    - scikit-learn >=1.1.1,<2.0.0
+    - joblib >=1.2.0,<2.0.0
+    - scikit-learn >=1.1.0,<1.3.0
     - pytables >=3.7.0,<4.0.0
     - xlrd >=2.0.1,<3.0.0
     - openpyxl >=3.0.10,<4.0.0
+    - pytables >=3.7.0,<3.8.0
 
 test:
   imports:
