@@ -1,5 +1,5 @@
 {% set name = "doubt" %}
-{% set version = "4.5.0" %}
+{% set version = "4.5.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/doubt-{{ version }}.tar.gz
-  sha256: 864eebe825bb2000c4a8297102c2fec07541963784efb4b3d337be7a616a462b
+  sha256: feeab4d1d90b5f8213bffedc30bf9171721a40222a01241b30233408a4225825
 
 build:
   noarch: python
